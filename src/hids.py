@@ -46,9 +46,9 @@ try:
                     continue
 
                 try:
-                    username = event.StringInserts[1]
-                    logon_type = event.StringInserts[5]
-                    ip_addr = event.StringInserts[6]
+                    username = event.StringInserts[5]
+                    logon_type = event.StringInserts[10]
+                    ip_addr = event.StringInserts[19]
                     event_time = event.TimeGenerated
                 except IndexError:
                     continue
@@ -68,14 +68,14 @@ try:
 
                 print(
                     f"[failed login] "
-                    f"user={username} ip={ip_addr} "
+                    f"user={username} ip={ip_addr} logon_type={logon_type} "
                     f"time={event_time} attempts={attempts}"
                 )
 
                 if attempts >= threshold:
                     print(
                         f"[alert] brute-force detected "
-                        f"user={username} ip={ip_addr}"
+                        f"user={username} ip={ip_addr} logon_type={logon_type} "
                     )
 
         if not events_found:
