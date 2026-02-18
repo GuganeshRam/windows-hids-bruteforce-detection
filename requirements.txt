@@ -1,1 +1,4 @@
+Windows Operating System
 pywin32
+Windows Event Log API (win32evtlog)
+Windows Event Logs
