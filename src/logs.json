@@ -1,0 +1,396 @@
+{
+  "status": "running",
+  "message": "Monitoring failed logons (EventID 4625)...",
+  "started_at": "2026-07-06T18:36:46.414170+00:00",
+  "last_updated": "2026-07-06T18:38:12.216119+00:00",
+  "threshold": 5,
+  "window_seconds": 60,
+  "events": [
+    {
+      "timestamp": "2026-07-07 00:08:11",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 9,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-07 00:08:10",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 8,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-07 00:08:07",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 7,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-07 00:08:05",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 6,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-07 00:08:04",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 5,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-07 00:08:03",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 4,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-07 00:08:00",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 3,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-07 00:07:59",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 2,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-07 00:07:58",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 1,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-04 14:37:44",
+      "username": "Guganesh",
+      "ip": "-",
+      "logon_type": "2",
+      "attempts": 1,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:20:02",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 20,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:20:01",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 19,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:20:00",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 18,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:59",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 17,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:59",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 16,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:58",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 15,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:57",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 14,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:56",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 13,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:55",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 13,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:55",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 12,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:55",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 11,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:54",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 10,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:54",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 9,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:53",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 8,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:51",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 7,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:19",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 6,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:18",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 5,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:19:17",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 4,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:19:16",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 4,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:19:15",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 3,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:18:55",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 3,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:18:16",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 4,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:18:12",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 3,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:17:26",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 2,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:17:21",
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 1,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:17:04",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 4,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:17:02",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 3,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:17:01",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 2,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:17:00",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 1,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:13:13",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 5,
+      "alert": true
+    },
+    {
+      "timestamp": "2026-07-03 23:13:12",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 4,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:13:11",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 3,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:13:06",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 3,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:12:46",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 2,
+      "alert": false
+    },
+    {
+      "timestamp": "2026-07-03 23:12:10",
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 1,
+      "alert": false
+    }
+  ],
+  "active": {
+    "guganesh@-": {
+      "username": "guganesh",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 9,
+      "last_seen": "2026-07-07 00:08:11",
+      "alert": true
+    },
+    "FakeUser@-": {
+      "username": "FakeUser",
+      "ip": "-",
+      "logon_type": "8",
+      "attempts": 20,
+      "last_seen": "2026-07-03 23:20:02",
+      "alert": true
+    },
+    "Guganesh@-": {
+      "username": "Guganesh",
+      "ip": "-",
+      "logon_type": "2",
+      "attempts": 1,
+      "last_seen": "2026-07-04 14:37:44",
+      "alert": false
+    }
+  }
+}

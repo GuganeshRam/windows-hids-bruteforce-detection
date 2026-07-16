@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIDS // Brute-Force Monitor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="scanlines" aria-hidden="true"></div>
+
+<div class="console">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-glyph">&#9679;</span>
+      <div class="brand-text">
+        <h1>HIDS <span class="sep">//</span> BRUTE-FORCE MONITOR</h1>
+        <p class="brand-sub">Windows Security Event Log &mdash; EventID 4625</p>
+      </div>
+    </div>
+
+    <div class="status-block">
+      <span class="status-dot" id="status-dot"></span>
+      <span class="status-text" id="status-text">CONNECTING</span>
+    </div>
+  </header>
+
+  <section class="stats-strip">
+    <div class="stat-card">
+      <span class="stat-label">Threshold</span>
+      <span class="stat-value" id="stat-threshold">&mdash;</span>
+      <span class="stat-unit">attempts / window</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Window</span>
+      <span class="stat-value" id="stat-window">&mdash;</span>
+      <span class="stat-unit">seconds</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Tracked keys</span>
+      <span class="stat-value" id="stat-tracked">0</span>
+      <span class="stat-unit">user @ ip</span>
+    </div>
+    <div class="stat-card stat-card--alert">
+      <span class="stat-label">Active alerts</span>
+      <span class="stat-value" id="stat-alerts">0</span>
+      <span class="stat-unit">&ge; threshold</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">Last update</span>
+      <span class="stat-value stat-value--small" id="stat-updated">&mdash;</span>
+      <span class="stat-unit" id="stat-since">&nbsp;</span>
+    </div>
+  </section>
+
+  <div id="banner" class="banner hidden"></div>
+
+  <main class="layout">
+
+    <section class="panel panel--tracked">
+      <div class="panel-head">
+        <h2>Tracked identities</h2>
+        <span class="panel-hint">attempts within rolling 60s window</span>
+      </div>
+      <div class="tracked-grid" id="tracked-grid">
+        <p class="empty-state" id="tracked-empty">No failed logons observed yet.</p>
+      </div>
+    </section>
+
+    <section class="panel panel--log">
+      <div class="panel-head">
+        <h2>Live event log</h2>
+        <span class="panel-hint" id="log-count">0 events</span>
+      </div>
+      <div class="log-table-wrap">
+        <table class="log-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>User</th>
+              <th>Source IP</th>
+              <th>Logon type</th>
+              <th>Attempts</th>
+              <th>State</th>
+            </tr>
+          </thead>
+          <tbody id="log-body">
+            <tr class="empty-row" id="log-empty">
+              <td colspan="6">Waiting for events&hellip;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>Polling /api/logs every 3s</span>
+    <span class="footer-sep">&middot;</span>
+    <span id="footer-started">&nbsp;</span>
+  </footer>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
